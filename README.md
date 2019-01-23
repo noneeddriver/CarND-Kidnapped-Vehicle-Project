@@ -20,8 +20,8 @@ As a result my particle filter passed the check of error for 100 second.
 ![alt text][image1]
 
 
-The small black circles with x are the landmarks on the map. The blue car represents the ground truth data and the big blue circle with a black arrow is the position estimation of my particle filter. The blue lines show which landmarks are associated with observations.Following is a gif animation to show the real-time localizing of the vehicle with my particle filter.
-![alt text][result_gif]
+The small black circles with x are the landmarks on the map. The blue car represents the ground truth data and the big blue circle with a black arrow is the position estimation of my particle filter. The blue lines show which landmarks are associated with observations.Following is a gif animation to show the real-time localizing of the vehicle with my particle filter. By klicking the gif can be forwarded to the whole video.
+[![alt text][result_gif]](https://www.youtube.com/watch?v=xOJTDmhvf9I)
 
 
 
