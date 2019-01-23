@@ -2,8 +2,8 @@
  * particle_filter.h
  *
  * 2D particle filter class.
- *  Created on: Dec 12, 2016
- *      Author: Tiffany Huang
+ *     Created on: Jan 02, 2019
+ *        Author: Pengmian Yan
  */
 
 #ifndef PARTICLE_FILTER_H_
@@ -78,7 +78,7 @@ public:
 	 * @param predicted Vector of predicted landmark observations
 	 * @param observations Vector of landmark observations
 	 */
-	void dataAssociation(std::vector<LandmarkObs> predicted, std::vector<LandmarkObs>& observations);
+	void dataAssociation(Particle &particle, std::vector<LandmarkObs> predicted);
 	
 	/**
 	 * updateWeights Updates the weights for each particle based on the likelihood of the 
@@ -101,9 +101,6 @@ public:
 	 * Set a particles list of associations, along with the associations calculated world x,y coordinates
 	 * This can be a very useful debugging tool to make sure transformations are correct and assocations correctly connected
 	 */
-	Particle SetAssociations(Particle& particle, const std::vector<int>& associations,
-		                     const std::vector<double>& sense_x, const std::vector<double>& sense_y);
-
 	
 	std::string getAssociations(Particle best);
 	std::string getSenseX(Particle best);
